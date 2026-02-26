@@ -329,4 +329,35 @@ input::placeholder{
     }
 
 }
+@media (min-width: 800px) {
+    .hero{
+        text-align: left;
+    }
+}
 
+@media (min-width: 800px) {
+    .hero__container{
+        flex-direction: row-reverse;
+    }
+
+    .hero__form{
+        flex-direction: row;
+        gap: 0;
+        input{
+            min-width: 60%;
+        }
+        button{
+            margin-left: 1rem;
+            min-width: 35%;
+        }
+    }
+
+    .features__container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+/* *{
+    border: red solid 3px;
+} */
