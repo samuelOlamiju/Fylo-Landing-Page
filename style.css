@@ -43,7 +43,7 @@ a{
 .hero, 
 .features__container, 
 .header{
-    padding-inline: 2rem;
+    padding-inline: 1.5rem;
 }
 
 /* HEADER STYLING */
@@ -132,10 +132,9 @@ input::placeholder{
 .features__container{
     background: hsl(240, 75%, 98%);
     .features__img{
-        display: flex;
-        justify-content: center;
+        display: block;
         img{
-        margin: 0;
+        /* margin: 0; */
         z-index: 1;
     }
     } 
@@ -344,11 +343,14 @@ input::placeholder{
     }
 }
 
-/* Images and Others */
+/* Images*/
 @media (min-width: 800px) {
-    .features__img , .hero__img  {
-        max-width: 80%;
-        margin-left: 3rem;
+    .hero__img, .features__img{
+        text-align: center;
+    }
+    .features__img img, .hero__img img {
+        max-width: 90%;
+        /* margin-left: 3rem; */
     }
 }
 
@@ -360,6 +362,7 @@ input::placeholder{
         padding-inline: 4rem;
     }
 
+    /* HERO */
     .hero__container{
         flex-direction: row-reverse;
         gap: 0;
@@ -378,6 +381,7 @@ input::placeholder{
         }
     }
 
+    /* FEATURES */
     .features__container{
         display: flex;
         flex-direction: row-reverse;
@@ -393,5 +397,10 @@ input::placeholder{
 
     .testimonial{
         margin: 0;
+    }
+   
+    /* CTA */
+    .cta__container{
+        /* flex-direction: row; */
     }
 }
