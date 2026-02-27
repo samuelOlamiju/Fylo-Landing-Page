@@ -40,6 +40,12 @@ a{
     text-decoration: none;
 }
 
+.hero, 
+.features__container, 
+.header{
+    padding-inline: 2rem;
+}
+
 /* HEADER STYLING */
 
 .header__container {
@@ -332,23 +338,26 @@ input::placeholder{
 }
 
 /* Typography */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .hero{
         text-align: left;
     }
 }
 
 /* Images and Others */
-@media (min-width: 600px) {
-    .features__img img, .hero__img img {
+@media (min-width: 800px) {
+    .features__img , .hero__img  {
         max-width: 80%;
+        margin-left: 3rem;
     }
 }
 
 /* Layout */
-@media (min-width: 600px) {
-    .hero, .features__container, .header{
-        padding-inline: 3rem;
+@media (min-width: 800px) {
+    .hero, 
+    .features__container, 
+    .header{
+        padding-inline: 4rem;
     }
 
     .hero__container{
