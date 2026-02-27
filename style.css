@@ -273,12 +273,16 @@ input::placeholder{
 /* FOOTER */
 
 .footer{
-    padding: 3rem 2rem;
+    padding: 3rem 4rem;
     background: var(--primary-dark);
     color: #fff;
     svg path{
         fill: white;
     }
+}
+
+.footer__brand{
+    margin-bottom: 2rem;
 }
 
 .footer__container{
@@ -413,7 +417,6 @@ input::placeholder{
     .cta__container{
          display: grid;
          grid-template-columns: 3fr 2fr;
-         gap: 10rem;
  
          p, h2{
              text-align: left;
@@ -424,12 +427,11 @@ input::placeholder{
          }
          
          button{
-             max-width: 35%;
+             max-width: 40%;
          }
      }
 
    } 
-   
 
     .cta__title{
     margin-bottom: 1rem;
@@ -437,5 +439,20 @@ input::placeholder{
 
     .desktop__left{
         max-width: 70%;
+    }
+
+    /* FOOTER */
+    .footer__container{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .footer__nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    .attribution{
+        min-width: 100%;
+        text-align: center;
     }
 }
