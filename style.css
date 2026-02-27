@@ -451,8 +451,4 @@ input::placeholder{
         display: flex;
         justify-content: space-around;
     }
-    .attribution{
-        min-width: 100%;
-        text-align: center;
-    }
 }
