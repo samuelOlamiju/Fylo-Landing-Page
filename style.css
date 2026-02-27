@@ -129,7 +129,7 @@ input::placeholder{
         display: flex;
         justify-content: center;
         img{
-        max-width: 85%;
+        /* max-width: 85%; */
         margin: 0;
         z-index: 1;
     }
@@ -320,21 +320,33 @@ input::placeholder{
     color: var(--accent-bright); 
 }
 
+/* Divider */
 @media (min-width: 375px) {
     .mobile__curve{
         display: none;
     }
     .desktop__curve{
         display: block;
+        min-width: 100%;
     }
 
 }
+
+/* Typography */
 @media (min-width: 800px) {
     .hero{
         text-align: left;
     }
 }
 
+/* Images and Others */
+@media (min-width: 800px) {
+    .features__img img, .hero__img img {
+        max-width: 80%;
+    }
+}
+
+/* Layout */
 @media (min-width: 800px) {
     .hero__container{
         flex-direction: row-reverse;
