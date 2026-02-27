@@ -28,7 +28,7 @@ body{
     font-family: "Open Sans", sans-serif;
 }
 
-.header, .hero{
+.header{
     padding-inline: 1.5rem;
 }
 
@@ -129,7 +129,6 @@ input::placeholder{
         display: flex;
         justify-content: center;
         img{
-        /* max-width: 85%; */
         margin: 0;
         z-index: 1;
     }
@@ -333,23 +332,29 @@ input::placeholder{
 }
 
 /* Typography */
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     .hero{
         text-align: left;
     }
 }
 
 /* Images and Others */
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     .features__img img, .hero__img img {
         max-width: 80%;
     }
 }
 
 /* Layout */
-@media (min-width: 800px) {
+@media (min-width: 600px) {
+    .hero, .features__container, .header{
+        padding-inline: 3rem;
+    }
+
     .hero__container{
         flex-direction: row-reverse;
+        gap: 0;
+        align-items: center;
     }
 
     .hero__form{
@@ -367,9 +372,17 @@ input::placeholder{
     .features__container{
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .features__content{
+        padding-inline: 0;
+        a, h2{
+            align-self: flex-start;
+        }
+    }
+
+    .testimonial{
+        margin: 0;
     }
 }
-
-/* *{
-    border: red solid 3px;
-} */
