@@ -266,6 +266,12 @@ input::placeholder{
     }
 }
 
+.cta__title{
+    margin-bottom: 2rem;
+}
+
+/* FOOTER */
+
 .footer{
     padding: 3rem 2rem;
     background: var(--primary-dark);
@@ -323,6 +329,8 @@ input::placeholder{
 .attribution a { 
     color: var(--accent-bright); 
 }
+
+/* ---MEDIA QUERIES--- */
 
 /* Divider */
 @media (min-width: 375px) {
@@ -400,7 +408,28 @@ input::placeholder{
     }
    
     /* CTA */
-    .cta__container{
-        /* flex-direction: row; */
+   .cta .cta__container{
+        flex-direction: row;
+        gap: 3rem;
+
+        p, h2{
+            text-align: left;
+        }
+
+        input{
+            max-width: 70%;
+        }
+        
+        button{
+            max-width: 40%;
+        }
+    }
+
+    .cta__title{
+    margin-bottom: 1.5rem;
+}
+
+    .desktop__left, .desktop__right{
+        min-width: 50%;
     }
 }
